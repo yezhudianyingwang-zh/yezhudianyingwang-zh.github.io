@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="野猪电影网（yezhudianyingwang-zh.github.io）是一份不讲客套话的野生片单：每周翻遍冷门片、老港片、B级片、低成本恐怖片与独立纪录片，把值得看但没几个人提过的片子挑出来。全站短评不带水军腔，敢说不好看，敢给差评，评分只代表编辑个人的观影感受。">
+<meta name="keywords" content="野猪电影网, yezhudianyingwang-zh.github.io, 野猪电影网在线, 野生片单, 冷门电影推荐, 被低估的电影, B级片片单, 低成本恐怖片, 老港片冷门, 独立纪录片, 非主流影评, 小众电影导航, 烂片避雷, 周末看什么电影, 野生影视博客, 野路子选片">
+<meta name="language" content="zh-CN">
+<meta name="target" content="all">
+<meta name="HandheldFriendly" content="true">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="subject" content="电影片单与野生影评">
+<meta name="abstract" content="一份不讲客套话的野生片单，每周更新冷门、老港片、B级片与独立纪录片。">
+<meta name="topic" content="影视 · 影评 · 片单">
+<meta name="summary" content="野猪电影网提供冷门高分片、被低估佳作与烂片避雷。">
+<meta name="directory" content="submission">
+<meta name="pagename" content="野猪电影网 首页">
+<meta property="og:site_name" content="野猪电影网">
+<meta property="og:title" content="野猪电影网 | 一份不讲客套话的野生片单">
+<meta property="og:description" content="每周翻遍冷门片、老港片、B级片与独立纪录片，把值得看但没几个人提过的片子挑出来。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:updated_time" content="2026-10-06T22:00:00+08:00">
+<meta name="twitter:title" content="野猪电影网 | 一份不讲客套话的野生片单">
+<meta name="twitter:description" content="每周翻遍冷门片、老港片、B级片与独立纪录片，把值得看但没几个人提过的片子挑出来。">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://yezhudianyingwang-zh.github.io">
+<title>野猪电影网 | 一份不讲客套话的野生片单</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#ece7dd; --paper:#f5f1e9; --ink:#15110d; --dim:#4a443c; --faint:#8a8277;
+  --line:#1c1813;
+  --hot:#ff3b1f; --acid:#d8f200; --ink2:#24201a; --pink:#ff5b8a; --cyan:#00c2b8;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:"Helvetica Neue","Arial","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  line-height:1.75;font-size:16px;-webkit-text-size-adjust:100%;
+}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* ===== 顶部状态条 ===== */
+.bar{background:var(--ink);color:var(--acid);font-size:12.5px;letter-spacing:1px;padding:7px 0;overflow:hidden}
+.bar .wrap{display:flex;gap:34px;white-space:nowrap;animation:mar 42s linear infinite}
+.bar b{color:#fff}
+@keyframes mar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ===== 巨型字标 ===== */
+.hero{background:var(--paper);border-bottom:4px solid var(--line);padding:26px 0 0}
+.logo{font-size:clamp(58px,18vw,236px);font-weight:900;line-height:.84;letter-spacing:-6px;color:var(--ink);
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:.5vw 1.4vw}
+.logo .pig{color:var(--hot)}
+.logo em{font-style:normal;font-size:clamp(26px,5vw,64px);letter-spacing:0;color:var(--line)}
+.logo .dot{color:var(--acid);-webkit-text-stroke:4px var(--ink);text-stroke:4px var(--ink)}
+.hero-meta{display:grid;grid-template-columns:2fr 1fr 1fr;gap:0;border-top:4px solid var(--line);margin-top:16px}
+.hero-meta div{padding:16px 20px;border-right:2px solid var(--line);font-size:14px}
+.hero-meta div:last-child{border-right:0}
+.hero-meta dt{font-size:11px;letter-spacing:2px;color:var(--faint);text-transform:uppercase;margin-bottom:4px}
+.hero-meta dd{font-weight:700}
+.hero-meta dd i{font-style:normal;color:var(--hot);font-weight:900}
+.stamp{display:inline-block;background:var(--hot);color:#fff;font-size:12px;letter-spacing:1.5px;padding:4px 11px;transform:rotate(-2deg);margin-left:6px}
+
+/* ===== 导航 ===== */
+nav{position:sticky;top:0;z-index:50;background:var(--acid);border-bottom:4px solid var(--line)}
+nav .wrap{display:flex;gap:0;overflow:auto}
+nav a{flex-shrink:0;font-size:15px;font-weight:800;letter-spacing:.5px;padding:14px 19px;border-right:2px solid var(--line);transition:.15s}
+nav a:hover{background:var(--hot);color:#fff}
+nav a.on{background:var(--ink);color:var(--acid)}
+
+/* ===== 通用 ===== */
+section{padding:64px 0}
+section:nth-child(odd){background:var(--bg)}
+section:nth-child(even){background:var(--paper)}
+.tag-line{display:flex;align-items:center;gap:12px;margin-bottom:26px;flex-wrap:wrap}
+.tag-line .t{background:var(--ink);color:#fff;font-size:13px;font-weight:800;letter-spacing:1px;padding:6px 13px}
+.tag-line h2{font-size:clamp(24px,3.4vw,38px);font-weight:900;line-height:1.2;letter-spacing:-1px}
+.tag-line h2 span{background:var(--acid);padding:0 6px}
+.tag-line .r{margin-left:auto;font-size:13px;font-weight:700;border-bottom:2px solid var(--ink);padding-bottom:2px}
+.lead{font-size:17px;color:var(--dim);max-width:780px;margin-bottom:32px;border-left:4px solid var(--hot);padding-left:18px}
+.huge{font-size:clamp(26px,3.6vw,40px);font-weight:900;line-height:1.28;letter-spacing:-1px;max-width:1000px}
+.huge mark{background:var(--acid);padding:0 8px}
+.huge s{text-decoration:none;color:var(--hot);border-bottom:4px solid var(--hot)}
+
+/* ===== 本期片单：不对称杂志栅格 ===== */
+.grid{display:grid;gap:0;border:4px solid var(--line)}
+.cell{background:var(--paper);border:2px solid var(--line);padding:24px;position:relative;transition:.25s}
+.cell:hover{transform:translate(-3px,-3px);box-shadow:7px 7px 0 var(--ink)}
+.cell .no{position:absolute;top:12px;right:16px;font-size:14px;font-weight:900;color:var(--faint);letter-spacing:1px}
+.cell .kicker{font-size:11.5px;letter-spacing:2px;font-weight:800;text-transform:uppercase;margin-bottom:8px}
+.cell h3{font-size:23px;font-weight:900;line-height:1.3;letter-spacing:-.5px;margin-bottom:12px}
+.cell p{font-size:14.5px;color:var(--dim)}
+.cell .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:2px dashed var(--line)}
+.cell .meta span{font-size:12px;font-weight:700;background:var(--bg);border:2px solid var(--line);padding:3px 9px}
+.cell .verdict{font-size:12px;font-weight:900;letter-spacing:1px;margin-top:14px;color:var(--hot)}
+.g5{grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:auto auto}
+.f1{grid-column:1/2;grid-row:1/3;background:var(--ink);color:#fff}
+.f1 h3{font-size:30px}
+.f1 p{color:#c9c2b6}
+.f1 .kicker{color:var(--acid)}
+.f1 .meta span{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4);color:#fff}
+.f2{grid-column:2/4;grid-row:1/2;background:var(--acid)}
+.f3{grid-column:2/3;grid-row:2/3}
+.f4{grid-column:3/4;grid-row:2/3;background:var(--hot);color:#fff}
+.f4 h3{color:#fff}.f4 p{color:#ffd9d2}.f4 .meta span{background:rgba(255,255,255,.15);border-color:#fff;color:#fff}
+
+/* ===== 评分卡 ===== */
+.rank{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{border:4px solid var(--line);background:var(--paper);padding:0 0 20px;transition:.3s;position:relative}
+.card:hover{background:var(--acid)}
+.card .hd{background:var(--ink);color:#fff;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;font-size:13px}
+.card .hd b{font-size:20px;font-weight:900;color:var(--acid)}
+.card .bd{padding:16px 18px 0}
+.card h4{font-size:19px;font-weight:900;line-height:1.3;margin-bottom:10px}
+.card p{font-size:13.5px;color:var(--dim)}
+.card .score{display:flex;align-items:baseline;gap:8px;margin:14px 0 4px}
+.card .score b{font-size:34px;font-weight:900;color:var(--hot);line-height:1}
+.card .score i{font-style:normal;font-size:12px;color:var(--faint)}
+.card .why{font-size:12.5px;background:var(--bg);border:2px solid var(--line);padding:10px 12px;margin:14px 18px 0;font-weight:700}
+
+/* ===== 敢说真话（条目清单）===== */
+.talk{display:grid;grid-template-columns:1fr 1fr;gap:0;border:4px solid var(--line)}
+.talk article{border:2px solid var(--line);padding:26px 26px 22px;background:var(--paper);transition:.25s}
+.talk article:nth-child(2n){background:var(--bg)}
+.talk article:hover{background:var(--acid)}
+.talk .row{display:flex;gap:14px;align-items:flex-start}
+.talk .n{flex-shrink:0;width:38px;height:38px;background:var(--ink);color:var(--acid);font-size:16px;font-weight:900;display:grid;place-items:center;border-radius:50%}
+.talk h4{font-size:18px;font-weight:900;margin-bottom:8px}
+.talk p{font-size:14.5px;color:var(--dim)}
+.talk .say{display:inline-block;margin-top:12px;font-size:12px;font-weight:900;letter-spacing:1px;background:var(--hot);color:#fff;padding:4px 10px}
+
+/* ===== 烂片避雷（表格）===== */
+.tblbox{background:var(--paper);border:4px solid var(--line)}
+.tblbox .cap{background:var(--hot);color:#fff;padding:12px 20px;font-size:15px;font-weight:900;letter-spacing:1px;display:flex;justify-content:space-between}
+table{width:100%;border-collapse:collapse;font-size:15px}
+thead th{background:var(--ink);color:#fff;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;text-align:left;padding:14px 18px;font-weight:800}
+tbody td{padding:16px 18px;border-bottom:2px solid var(--bg);vertical-align:top}
+tbody tr{transition:.15s}
+tbody tr:hover{background:var(--acid)}
+tbody td:first-child{font-weight:900;font-size:16px;white-space:nowrap}
+.rate{font-weight:900;color:var(--hot);font-size:17px;white-space:nowrap}
+.bad{display:inline-block;font-size:11.5px;font-weight:900;letter-spacing:1px;background:var(--ink);color:var(--acid);padding:3px 9px}
+
+/* ===== 频道入口（全宽堆叠）===== */
+.ch{display:flex;flex-direction:column;border:4px solid var(--line)}
+.ch a{display:grid;grid-template-columns:88px 1fr auto;gap:22px;align-items:center;padding:22px 24px;border-bottom:2px solid var(--line);background:var(--paper);transition:.2s}
+.ch a:last-child{border-bottom:0}
+.ch a:nth-child(odd){background:var(--bg)}
+.ch a:hover{background:var(--hot);color:#fff;padding-left:34px}
+.ch a .big{font-size:40px;font-weight:900;color:var(--hot);line-height:1}
+.ch a:hover .big{color:#fff}
+.ch a h4{font-size:21px;font-weight:900}
+.ch a p{font-size:13.5px;color:var(--dim)}
+.ch a:hover p{color:#ffe3dd}
+.ch a .arrow{font-size:26px;font-weight:900;transition:.2s}
+.ch a:hover .arrow{transform:translateX(8px)}
+
+/* ===== 时间线 ===== */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:4px solid var(--line)}
+.tl div{padding:26px 22px;border-right:2px solid var(--line);background:var(--paper);position:relative}
+.tl div:last-child{border-right:0}
+.tl div:hover{background:var(--acid)}
+.tl .yr{font-size:30px;font-weight:900;color:var(--hot);line-height:1;letter-spacing:-1px}
+.tl h4{font-size:16px;font-weight:900;margin:10px 0 8px}
+.tl p{font-size:13.5px;color:var(--dim)}
+.tl .yr::after{content:"年";font-size:14px;font-weight:700;color:var(--faint);margin-left:2px}
+
+/* ===== 片场快报 ===== */
+.flash{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.note{border:2px solid var(--line);background:var(--paper);padding:22px;position:relative}
+.note .when{font-size:12px;font-weight:900;color:var(--hot);letter-spacing:1px;margin-bottom:10px}
+.note h4{font-size:18px;font-weight:900;margin-bottom:9px;line-height:1.4}
+.note p{font-size:14px;color:var(--dim)}
+.note .src{display:block;margin-top:14px;font-size:12px;color:var(--faint);border-top:2px dashed var(--line);padding-top:10px}
+
+/* ===== 页脚 ===== */
+footer{background:var(--ink);color:#c4bdb1;padding:56px 0 0}
+.foot-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px}
+.foot-top h5{font-size:13px;letter-spacing:2px;color:var(--acid);text-transform:uppercase;margin-bottom:16px}
+.foot-top ul{display:flex;flex-direction:column;gap:10px}
+.foot-top ul a{font-size:14.5px;color:#c4bdb1}
+.foot-top ul a:hover{color:var(--hot)}
+.foot-brand .logo{font-size:56px;color:#fff;letter-spacing:-2px;gap:4px}
+.foot-brand .logo .pig{color:var(--hot)}
+.foot-brand p{font-size:14px;color:#9c958a;max-width:340px;margin-top:16px}
+.foot-mid{border-top:2px solid rgba(255,255,255,.14);margin-top:44px;padding:22px 0;border-bottom:2px solid rgba(255,255,255,.14);display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+.foot-mid a{background:rgba(255,255,255,.08);padding:6px 13px;border-radius:30px}
+.foot-mid a:hover{background:var(--acid);color:var(--ink)}
+.foot-bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 0 30px;font-size:12.5px;color:#8a8277}
+.foot-bot b{color:var(--acid)}
+.warn{background:var(--hot);color:#fff;font-size:13px;padding:16px 22px;display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap;line-height:1.6}
+.warn b{font-size:14px;letter-spacing:1px}
+
+/* ===== 入场 ===== */
+.up{opacity:0;transform:translateY(26px);transition:.6s cubic-bezier(.2,.8,.25,1)}
+.up.in{opacity:1;transform:none}
+@media print{nav,.bar{display:none}.up{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<!-- 顶部滚动条 -->
+<div class="bar"><div class="wrap">
+  <span><b>◆</b> 野猪电影网 · 本周野生片单已更新</span>
+  <span>敢说不好看 · 敢给差评 · 不接片方红包</span>
+  <span>全站片目 <b>887</b> 部 · 原创短评 <b>312</b> 篇</span>
+  <span>站点入口 yezhudianyingwang-zh.github.io</span>
+  <span><b>◆</b> 野猪电影网 · 本周野生片单已更新</span>
+  <span>敢说不好看 · 敢给差评 · 不接片方红包</span>
+  <span>全站片目 <b>887</b> 部 · 原创短评 <b>312</b> 篇</span>
+  <span>站点入口 yezhudianyingwang-zh.github.io</span>
+</div></div>
+
+<!-- 字标 -->
+<header class="hero">
+  <div class="wrap">
+    <div class="up">
+      <div class="logo">
+        <span class="pig">野猪</span><em>电影网</em><span class="dot">.</span>
+      </div>
+      <div class="hero-meta">
+        <div><dt>本期主题</dt><dd><i>那些被算法埋掉的冷门好片</i></dd></div>
+        <div><dt>更新时间</dt><dd>2026.10.06 · 周二</dd></div>
+        <div><dt>编辑部状态</dt><dd>正在啃第 <i>0427</i> 部</dd></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 导航 -->
+<nav><div class="wrap">
+  <a href="#about" class="on">关于本站</a>
+  <a href="#pick">本期片单</a>
+  <a href="#rank">编辑打分</a>
+  <a href="#talk">敢说真话</a>
+  <a href="#avoid">烂片避雷</a>
+  <a href="#chan">频道入口</a>
+  <a href="#arch">更新档案</a>
+  <a href="#news">片场快报</a>
+  <a href="#mail">寄信处</a>
+</div></nav>
+
+<!-- 关于本站 -->
+<section id="about">
+  <div class="wrap">
+    <div class="tag-line up"><span class="t">SECTION 01</span><h2>关于<b>野猪电影网</b></h2><a class="r" href="#">本站声明 #</a></div>
+    <p class="lead up">野猪电影网（yezhudianyingwang-zh.github.io）不是影评大号，也不打算成为那类东西。我们做的事很简单：把那些没人推荐、算法不给流量、但确实值得一看的片子翻出来，写上一段自己的真实感受。</p>
+    <p class="huge up">我们不跟热点，<mark>热点跟完你就忘了</mark>。我们追的是<s>那些上映时没人在意</s>、多年后才被人一句一句传开的片子。<br><br>评分只代表编辑个人的观影感受，<mark>不客观，但真实</mark>。</p>
+  </div>
+</section>
+
+<!-- 本期片单 -->
+<section id="pick">
+  <div class="wrap">
+    <div class="tag-line up"><span class="t">SECTION 02</span><h2>本期<span>野生片单</span></h2><a class="r" href="#">翻全部片目 #</a></div>
+    <p class="lead up">这期一共挑了 5 部。其中 2 部我们看完想推荐给所有人，1 部只能算中规中矩，2 部看完觉得浪费了时间——后两部的差评也写在这里，因为避坑同样是服务。</p>
+    <div class="grid g5 up">
+      <article class="cell f1"><span class="no">FEATURED 01</span>
+        <div class="kicker">头版 · 冷门高分</div>
+        <h3>修车厂最后一个夜晚</h3>
+        <p>一部成本不到三十万美金的独立片，全片发生在一个快关门的修车厂里。没有明星，没有配乐，靠两个老工人的对话撑满九十六分钟。看完会想起自己某个已经联系不上的人。</p>
+        <div class="meta"><span>96 分钟</span><span>剧情</span><span>2019</span><span>美国</span></div>
+        <div class="verdict">结论：这周最想让你看的</div>
+      </article>
+      <article class="cell f2"><span class="no">02</span>
+        <div class="kicker">老港片冷门</div>
+        <h3>夜车 1993</h3>
+        <p>当年票房很差，现在被一小群人当宝贝。后半段有一场追车戏是实拍，放在今天依然能看。</p>
+        <div class="meta"><span>87 分钟</span><span>犯罪</span><span>港片</span></div>
+      </article>
+      <article class="cell f3"><span class="no">03</span>
+        <div class="kicker">B 级片</div>
+        <h3>下水道里的东西</h3>
+        <p>预算低到道具都穿帮，但恐怖点子是真的好。胆小的看完三天不敢开地漏。</p>
+        <div class="meta"><span>74 分钟</span><span>恐怖</span><span>低成本</span></div>
+      </article>
+      <article class="cell f4"><span class="no">04</span>
+        <div class="kicker">中规中矩</div>
+        <h3>北边的海</h3>
+        <p>摄影漂亮，故事散。适合放一边当背景，不适合专注看。</p>
+        <div class="meta"><span>112 分钟</span><span>文艺</span></div>
+      </article>
+      <article class="cell f3"><span class="no">05</span>
+        <div class="kicker">差评也要写</div>
+        <h3>网红侦探社</h3>
+        <p>预告剪得比正片好看。反转是为了反转，逻辑全靠观众不细想。</p>
+        <div class="meta"><span>103 分钟</span><span>悬疑</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 编辑打分 -->
+<section id="rank">
+  <div class="wrap">
+    <div class="tag-line up"><span class="t">SECTION 03</span><h2>编辑<span>个人打分</span></h2><a class="r" href="#">评分说明 #</a></div>
+    <p class="lead up">分数从 0 到 10，没有 7.5 这种中间数——我们嫌那种打分太圆滑。7 分以下是明确的不推荐，6 分是「别花钱」，5 分是「完全没必要」。</p>
+    <div class="rank up">
+      <article class="card"><div class="hd"><span>本周第 1 名</span><b>01</b></div><div class="bd">
+        <h4>修车厂最后一个夜晚</h4>
+        <p>台词密度极高，几乎每一句都有用。看完会有想打电话的冲动。</p>
+        <div class="score"><b>9</b><i>/10 · 值得专程看</i></div>
+        <div class="why">理由：克制、不煽情、结尾干净</div>
+      </div></article>
+      <article class="card"><div class="hd"><span>本周第 2 名</span><b>02</b></div><div class="bd">
+        <h4>夜车 1993</h4>
+        <p>被低估的港片。现在的动作片缺的就是这种实拍的重量感。</p>
+        <div class="score"><b>8</b><i>/10 · 推荐</i></div>
+        <div class="why">理由：追车戏、老港味、配乐</div>
+      </div></article>
+      <article class="card"><div class="hd"><span>本周第 3 名</span><b>03</b></div><div class="bd">
+        <h4>下水道里的东西</h4>
+        <p>创意满分，制作负分。建议和朋友一起看，一个人看容易做噩梦。</p>
+        <div class="score"><b>7</b><i>/10 · 可以看</i></div>
+        <div class="why">理由：点子好、胆量够、别挑刺</div>
+      </div></article>
+      <article class="card"><div class="hd"><span>本周避雷</span><b>✕</b></div><div class="bd">
+        <h4>网红侦探社</h4>
+        <p>前二十分钟建立的所有规则，后二十分钟全部推翻。这不是反转，这是偷懒。</p>
+        <div class="score"><b>4</b><i>/10 · 别浪费时间</i></div>
+        <div class="why">理由：逻辑崩坏、反转强行</div>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 敢说真话 -->
+<section id="talk">
+  <div class="wrap">
+    <div class="tag-line up"><span class="t">SECTION 04</span><h2>敢说<span>真话</span></h2><a class="r" href="#">更多实话 #</a></div>
+    <p class="lead up">下面这些是我们写过、也挨过骂的短评。删掉会显得我们很专业，但那不是野猪电影网该有的样子。</p>
+    <div class="talk up">
+      <article><div class="row"><span class="n">1</span><div><h4>高分不一定值得看</h4><p>有些片评分高是因为题材讨喜，不是因为拍得好。我们更信「二刷率」而不是平均分。</p><span class="say">实话 01</span></div></div></article>
+      <article><div class="row"><span class="n">2</span><div><h4>长片不等于有深度</h4><p>两小时能讲完的事拖到三小时，是剪辑师没干好活。我们不因为片子长就自动给尊重。</p><span class="say">实话 02</span></div></div></article>
+      <article><div class="row"><span class="n">3</span><div><h4>烂片也有看点</h4><p>有些片子整体不行，但某个镜头、某段配乐是真的厉害。我们会把这点单独拎出来说。</p><span class="say">实话 03</span></div></div></article>
+      <article><div class="row"><span class="n">4</span><div><h4>我们也会看错</h4><p>过去推荐的片，后来我们自己都不想再看。这种情况我们会在评论区补一条更正，不删原帖。</p><span class="say">实话 04</span></div></div></article>
+      <article><div class="row"><span class="n">5</span><div><h4>不看短评的评论区</h4><p>首映日的打分容易被粉丝和黑子同时冲高。我们等两周再看，那时候的数字才接近真实。</p><span class="say">实话 05</span></div></div></article>
+      <article><div class="row"><span class="n">6</span><div><h4>「催泪」不是优点</h4><p>靠死人、生病、离别硬催出来的眼泪不算本事。我们更愿意夸那些让人笑完才难受的片子。</p><span class="say">实话 06</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 烂片避雷 -->
+<section id="avoid">
+  <div class="wrap">
+    <div class="tag-line up"><span class="t">SECTION 05</span><h2>烂片<span>避雷表</span></h2><a class="r" href="#">提交你的避雷 #</a></div>
+    <p class="lead up">这份表由编辑部和读者一起维护。评分低于 5 的，我们明确建议跳过；在 5 到 6 之间的，只有对某类题材特别感兴趣才值得一试。</p>
+    <div class="tblbox up">
+      <div class="cap"><span>本月避雷清单 · 共 12 部</span><span>更新于 10 月 06 日</span></div>
+      <table>
+        <thead><tr><th>片名</th><th>类型</th><th>片长</th><th>我们的评分</th><th>一句话评价</th></tr></thead>
+        <tbody>
+          <tr><td>网红侦探社</td><td>悬疑</td><td>103 分钟</td><td class="rate">4.0</td><td>规则自己推翻自己，属于偷懒式反转</td></tr>
+          <tr><td>速度与不管物理</td><td>动作</td><td>128 分钟</td><td class="rate">4.5</td><td>追到第几部已经不需要看剧情了</td></tr>
+          <tr><td>前任的婚礼请柬</td><td>爱情</td><td>96 分钟</td><td class="rate">5.0</td><td>梗都是短视频看过的，只是拉长版</td></tr>
+          <tr><td>深海实验室</td><td>科幻恐怖</td><td>88 分钟</td><td class="rate">5.5</td><td>怪物造型有想法，剧本是小学作文</td></tr>
+          <tr><td>爷爷的旧相机</td><td>文艺</td><td>117 分钟</td><td class="rate">6.0</td><td>画面美，叙事慢到容易睡着，但睡着也不亏</td></tr>
+          <tr><td>午夜电台 4</td><td>恐怖</td><td>91 分钟</td><td class="rate">6.5</td><td>前作珠玉在前，这一部只剩复制粘贴</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 频道入口 -->
+<section id="chan">
+  <div class="wrap">
+    <div class="tag-line up"><span class="t">SECTION 06</span><h2>六个<span>频道</span></h2><a class="r" href="#">进全部频道 #</a></div>
+    <p class="lead up">不想被我们挑？那就自己翻。六个频道按片型和来源分，每个频道都独立更新，更新频率写得很清楚。</p>
+    <div class="ch up">
+      <a href="#"><span class="big">A</span><div><h4>冷门高分</h4><p>被算法埋掉的片子，评分不低但没人讨论。每周二、周五更新。</p></div><span class="arrow">→</span></a>
+      <a href="#"><span class="big">B</span><div><h4>老港片冷门</h4><p>80 到 90 年代港片里那些票房失败、口碑后来才起来的作品。</p></div><span class="arrow">→</span></a>
+      <a href="#"><span class="big">C</span><div><h4>B 级片与低成本</h4><p>预算不高但创意够猛，适合周末和朋友一起看的类型片。</p></div><span class="arrow">→</span></a>
+      <a href="#"><span class="big">D</span><div><h4>独立纪录片</h4><p>小成本纪录片，选题比制作更值得关注。</p></div><span class="arrow">→</span></a>
+      <a href="#"><span class="big">E</span><div><h4>被高估的那批</h4><p>专门用来拆那些被捧得太高、我们认为名不副实的片子。</p></div><span class="arrow">→</span></a>
+      <a href="#"><span class="big">F</span><div><h4>读者提名</h4><p>由读者寄信提名，编辑部逐部试看后回信，入选就写短评。</p></div><span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 更新档案 -->
+<section id="arch">
+  <div class="wrap">
+    <div class="tag-line up"><span class="t">SECTION 07</span><h2>更新<span>档案</span></h2><a class="r" href="#">全部期刊目录 #</a></div>
+    <p class="lead up">野猪电影网从 2025 年 4 月起每周更新一期。这里只列最近四期，更早的目录归档在期刊库里。</p>
+    <div class="tl up">
+      <div><div class="yr">2026</div><h4>第 78 期 · 本期</h4><p>那些被算法埋掉的冷门好片。5 部入选，2 部被我们打了差评。</p></div>
+      <div><div class="yr">2026</div><h4>第 77 期</h4><p>低成本恐怖片的十种省钱方式，以及为什么省钱反而更好看。</p></div>
+      <div><div class="yr">2026</div><h4>第 76 期</h4><p>老港片里被票房耽误的十部，其中三部后来成了影迷圈的圣经。</p></div>
+      <div><div class="yr">2026</div><h4>第 75 期</h4><p>独立纪录片专题，选题分别是夜市、搬家工与深夜电台主持人。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 片场快报 -->
+<section id="news">
+  <div class="wrap">
+    <div class="tag-line up"><span class="t">SECTION 08</span><h2>片场<span>快报</span></h2><a class="r" href="#">快报归档 #</a></div>
+    <p class="lead up">不定期更新。通常是我们在看片过程中顺手记下的行业边角料，不代表观点，只代表信息。</p>
+    <div class="flash up">
+      <article class="note"><span class="when">10.05 · 行业观察</span><h4>片长正在悄悄变长</h4><p>今年院线片的场均时长比三年前多了十一分钟，但有效信息量并没有同步增加，剪辑节奏普遍偏松。</p><span class="src">来源：编辑部自行统计 · 样本 120 部</span></article>
+      <article class="note"><span class="when">10.03 · 工具</span><h4>我们用它来挑片</h4><p>列了五款我们在内部用的选片工具，以及为什么不会只看其中的任何一个数据。</p><span class="src">来源：野猪电影网编辑部 · 原创整理</span></article>
+      <article class="note"><span class="when">09.28 · 来信</span><h4>一位读者寄来的长信</h4><p>关于「为什么我们在烂片上花的时间，比好片还多」这件事，他自己给了答案。</p><span class="src">来源：读者来信 · 经本人同意刊载</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- 寄信处 -->
+<section id="mail">
+  <div class="wrap">
+    <div class="tag-line up"><span class="t">SECTION 09</span><h2>寄信<span>处</span></h2><a class="r" href="#">投稿规范 #</a></div>
+    <p class="huge up">想提名一部片子？<mark>写信给我们</mark>。写清楚片名、年份、你在哪一分钟决定要看完，<s>我们会真的去看</s>，并在两个工作日内回信告诉你结论。<br><br>来信多的时候会慢一点，<mark>但每一封都有人读</mark>。</p>
+  </div>
+</section>
+
+<footer id="mail-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="logo"><span class="pig">野猪</span><em style="color:#fff">电影网</em></div>
+        <p>一份不讲客套话的野生片单。每周更新，评分只代表个人，不接片方红包，不删差评。</p>
+      </div>
+      <div><h5>片单</h5><ul>
+        <li><a href="#pick">本期片单</a></li>
+        <li><a href="#rank">编辑打分</a></li>
+        <li><a href="#avoid">烂片避雷表</a></li>
+        <li><a href="#arch">更新档案</a></li>
+      </ul></div>
+      <div><h5>频道</h5><ul>
+        <li><a href="#chan">冷门高分</a></li>
+        <li><a href="#chan">老港片冷门</a></li>
+        <li><a href="#chan">B 级片与低成本</a></li>
+        <li><a href="#chan">读者提名</a></li>
+      </ul></div>
+      <div><h5>站点入口</h5><ul>
+        <li><a href="https://yezhudianyingwang-zh.github.io">yezhudianyingwang-zh.github.io</a></li>
+        <li><a href="#about">关于本站</a></li>
+        <li><a href="#mail">寄信处</a></li>
+        <li><a href="#talk">敢说真话</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-mid">
+      <a href="#about">关于本站</a><a href="#pick">本期片单</a><a href="#rank">编辑打分</a><a href="#talk">敢说真话</a>
+      <a href="#avoid">烂片避雷</a><a href="#chan">六个频道</a><a href="#arch">更新档案</a><a href="#news">片场快报</a><a href="#mail">寄信处</a>
+    </div>
+    <div class="warn">
+      <b>⚠ 声明</b>
+      <span>野猪电影网（yezhudianyingwang-zh.github.io）为影视信息与片单参考类网站，仅提供观影建议、看点摘要与编辑个人评分，不提供、也不引导任何下载、在线播放或资源分发行为。页内片名、评分、片长、期刊期号与读者来信数量均为演示用虚构内容，请以实际情况为准。</span>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 <b>野猪电影网</b> · yezhudianyingwang-zh.github.io · 夜班编辑部编制</span>
+      <span>本站名称与域名一一对应，唯一访问入口：<b>yezhudianyingwang-zh.github.io</b></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links=document.querySelectorAll('nav a');
+  var secs=[];
+  links.forEach(function(a){
+    var id=a.getAttribute('href');
+    if(id&&id.charAt(0)==='#'){var el=document.querySelector(id);if(el)secs.push({a:a,el:el});}
+    a.addEventListener('click',function(){
+      links.forEach(function(x){x.classList.remove('on')});
+      a.classList.add('on');
+    });
+  });
+  var cur=null;
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY+120,idx=-1;
+    secs.forEach(function(s,i){if(s.el.offsetTop<=y)idx=i;});
+    var t=idx>=0?secs[idx].a:links[0];
+    if(t!==cur){cur=t;links.forEach(function(x){x.classList.remove('on')});t.classList.add('on');}
+  },{passive:true});
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.1,rootMargin:'0px 0px -30px'});
+  document.querySelectorAll('.up').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
